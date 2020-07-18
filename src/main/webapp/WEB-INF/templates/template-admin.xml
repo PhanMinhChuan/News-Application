@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+<tiles-definitions>
+	<definition name="templates.admin" template="/WEB-INF/templates/admin/inc/master.jsp">
+		<put-attribute name="header" value="/WEB-INF/templates/admin/inc/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/templates/admin/inc/footer.jsp" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="leftbar" value="/WEB-INF/templates/admin/inc/leftbar.jsp" />
+		
+	</definition>
+	<definition name="templates.adminlogin" template="/WEB-INF/templates/admin/inc/master.jsp">
+		<put-attribute name="header" value="/WEB-INF/templates/admin/inc/header.jsp" />
+		<put-attribute name="footer" value="" />
+		<put-attribute name="content" value="" />
+		<put-attribute name="leftbar" value="" />
+		
+	</definition>
+	
+	<definition name="admin.cat.index" extends="templates.admin">
+		<put-attribute name="content" value="/WEB-INF/views/admin/cat/index.jsp" />
+	</definition>
+	<definition name="admin.cat.add" extends="templates.admin">
+		<put-attribute name="content" value="/WEB-INF/views/admin/cat/add.jsp" />
+	</definition>
+	<definition name="admin.cat.edit" extends="templates.admin">
+		<put-attribute name="content" value="/WEB-INF/views/admin/cat/edit.jsp" />
+	</definition>
+	<definition name="admin.land.index" extends="templates.admin">
+		<put-attribute name="content" value="/WEB-INF/views/admin/land/index.jsp" />
+	</definition>
+	
+	<definition name="admin.index" extends="templates.admin">
+		<put-attribute name="content" value="/WEB-INF/views/admin/index.jsp" />
+	</definition>
+	<definition name="admin.cat" extends="templates.admin">
+		<put-attribute name="content" value="/WEB-INF/views/admin/cat.jsp" />
+	</definition>
+	<definition name="admin.news" extends="templates.admin">
+		<put-attribute name="content" value="/WEB-INF/views/admin/news.jsp" />
+	</definition>
+	<definition name="admin.login" extends="templates.adminlogin">
+		<put-attribute name="content" value="/WEB-INF/views/admin/login.jsp" />
+	</definition>
+	<definition name="admin.contact" extends="templates.admin">
+		<put-attribute name="content" value="/WEB-INF/views/admin/contact.jsp" />
+	</definition>
+	
+</tiles-definitions>
